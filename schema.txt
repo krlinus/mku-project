@@ -1,0 +1,75 @@
++-----------------+
+| Tables_in_votem |
++-----------------+
+| chall           |
+| demand          |
+| movie           |
+| personvote      |
+| tmpmovie        |
+| users           |
++-----------------+
+
+
+
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| hcode    | char(4)  | YES  |     | NULL    |       |
+| hname    | char(30) | YES  |     | NULL    |       |
+| hloc     | char(64) | YES  |     | NULL    |       |
+| hcity    | char(30) | YES  |     | NULL    |       |
+| hcountry | char(30) | YES  |     | NULL    |       |
+| hpin     | char(30) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+
++------------+---------------+------+-----+----------------+-------+
+| Field      | Type          | Null | Key | Default        | Extra |
++------------+---------------+------+-----+----------------+-------+
+| mcode      | char(4)       | YES  |     | NULL           |       |
+| nvotes     | int(11)       | YES  |     | NULL           |       |
+| oldestvote | timestamp(14) | YES  |     | NULL           |       |
+| newestvote | timestamp(14) | YES  |     | 00000000000000 |       |
++------------+---------------+------+-----+----------------+-------+
+
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| mcode | char(4)  | YES  |     | NULL    |       |
+| mname | char(50) | YES  |     | NULL    |       |
+| mpart | char(5)  | YES  |     | NULL    |       |
+| mtype | char(4)  | YES  |     | NULL    |       |
+| mlang | char(4)  | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+
+
++-----------+----------+------+-----+---------+-------+
+| Field     | Type     | Null | Key | Default | Extra |
++-----------+----------+------+-----+---------+-------+
+| personid  | char(50) | YES  |     | NULL    |       |
+| mcode     | char(4)  | YES  |     | NULL    |       |
+| moviedate | date     | YES  |     | NULL    |       |
+| hcode     | char(4)  | YES  |     | NULL    |       |
++-----------+----------+------+-----+---------+-------+
+
+
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| mname | char(50) | YES  |     | NULL    |       |
+| mpart | char(5)  | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+
+
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| uname    | char(30) | YES  |     | NULL    |       |
+| uage     | int(11)  | YES  |     | NULL    |       |
+| usex     | char(1)  | YES  |     | NULL    |       |
+| ucity    | char(20) | YES  |     | NULL    |       |
+| ucountry | char(20) | YES  |     | NULL    |       |
+| uemail   | char(50) | YES  |     | NULL    |       |
+| upass    | char(50) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+
+
